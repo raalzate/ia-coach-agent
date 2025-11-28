@@ -1,0 +1,12 @@
+streamlit
+torch
+transformers
+llama-cpp-python
+edge-tts
+accelerate
+sentencepiece
+numpy
+protobuf
+safetensors
+scipy
+python-dotenv

@@ -1,0 +1,55 @@
+# --- Python General ---
+__pycache__/
+*.py[cod]
+*$py.class
+
+# --- Entornos Virtuales (Virtual Envs) ---
+# Es vital no subir la carpeta donde instalaste las librerías
+venv/
+env/
+.venv/
+.env/
+
+# --- Variables de Entorno y Secretos (python-dotenv) ---
+# CRÍTICO: Nunca subas tus claves API o tokens
+.env
+.env.local
+.env.*
+!.env.example
+
+# --- Streamlit ---
+# Ignorar secretos de Streamlit pero mantener la configuración pública
+.streamlit/secrets.toml
+
+# --- Machine Learning & Modelos (Torch, Transformers, Llama-cpp) ---
+# Estos archivos son demasiado grandes para Git
+*.pt
+*.pth
+*.bin
+*.onnx
+*.safetensors
+*.gguf
+*.ckpt
+
+# Carpetas comunes de descarga de modelos (HuggingFace cache, etc.)
+models/
+checkpoints/
+.cache/
+
+# --- Audio (Edge-TTS) ---
+# Si generas audios de prueba, usualmente no quieres subirlos
+*.mp3
+*.wav
+*.json
+
+# --- Distribución y Builds ---
+build/
+dist/
+*.egg-info/
+
+# --- IDEs y Sistema Operativo ---
+.vscode/
+.idea/
+.DS_Store
+
+app-env/
